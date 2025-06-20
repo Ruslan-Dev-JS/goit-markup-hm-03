@@ -6,16 +6,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wdth@0,75..100;1,75..100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head> 
 <body>
 <header class="site-header">
+  <div class="container">
     <nav class="main-nav">
+      <div class="nav-main-list">
     <a href="./index.html" class="logo-class">
       Web<span class="studio_logo">Studio</span>
     </a>
-      <ul class="nav-list">
+      <ul>
         <li>
           <a href="./index.html" class="nav-link">Studio</a>
         </li>
@@ -28,7 +31,7 @@
       </ul>
     </nav>
     <address class="contact_address">
-      <ul class="contact-list">
+      <ul>
         <li>
           <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
         </li>
@@ -37,13 +40,18 @@
         </li>
       </ul>
     </address>
+  </div>
+    </div>
 </header>
     <main>
         <section id="hero-banner" class="hero-section">
-            <h1  class="hero-title">Effective Solutions for Your Business</h1>
+          <div class="container">
+            <h1  class="hero-title">Effective Solutions <br>for Your Business</h1>
             <button class="hero-button" type="button">Order Service</button>
+            </div>
         </section>
     <section class="features-section" id="features">
+      <div class="container">
         <h2 class="section-title">Features</h2> 
     <ul class="features-list">
     <li class="feature-item">
@@ -63,8 +71,10 @@
         <p class="feature-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
     </li>
     </ul>
+      </div>
 </section>
 <section id="review" class="team-section">
+  <div class="container">
   <h2 class="section-title">Our Team</h2>
   <ul class="team-list">
     <li class="team-card">
@@ -88,10 +98,12 @@
       <p class="card-text">UI Designer</p>
     </li>
   </ul>
+   </div>
 </section>
     <section id="portfolio"  class="portfolio-cards">
+      <div class="container">
           <h2 class="section-title">Portfolio</h2>
-        <ul>
+        <ul class="portfolio-container-cards">
             <li><img src="./images/bankingApp.jpg" alt="Banking App" width="360">
             <h3 class="card-title">Banking App</h3>
             <p class="card-text">App</p>
@@ -117,16 +129,18 @@
             <p class="card-text">Marketing</p>
         </li>
         </ul>
+        </div>
     </section>
     </main>
-<footer class="site-footer">
+    <footer class="site-footer">
+  <div class="container">
     <a href="./index.html" class="logo-class">
       Web<span class="footer-span">Studio</span>
     </a>
     <p class="footer-text">
       Increase the flow of customers and sales for your business with digital marketing & growth solutions.
     </p>
-
+    </div>
 </footer>
 </body>
 </html>

@@ -1,4 +1,9 @@
 /* Базові стилі для body та списків */
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -34,6 +39,8 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding-right: 76px;
+
 }
 
 .studio_logo {
@@ -41,6 +48,36 @@ a {
 }
 
 /* Навігаційні посилання */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Відступ між логотипом і списком */
+}
+
+
+.nav-main-list {
+  display: flex;
+  align-items: center;
+}
+
+
+.nav-main-list ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact_address ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .nav-link {
   font-weight: 500;
   font-size: 16px;
@@ -56,6 +93,14 @@ a {
 }
 
 /* Address */
+
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
 .contact_address {
   font-style: normal;
 }
@@ -91,6 +136,30 @@ a {
   color: #434455;
 }
 
+.features-list {
+  display: flex;
+  gap: 8px; /* або інше значення, згідно макету */
+  padding:50px 156px;
+  list-style: none;
+}
+
+.feature-item {
+  flex: 1 1 0;
+  max-width: 264px; /* обмеження ширини блоку */
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+}
+
 
 
 
@@ -107,8 +176,58 @@ a {
   text-align: center;
 }
 
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap; /* дозволяє перенос карток на новий рядок */
+  justify-content: center;
+}
+
+.team-card {
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 264px;
+  padding-bottom: 32px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.team-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+.card-text {
+  margin: 0;
+  font-size: 16px;
+  color: #434455;
+}
+
+.team-section {
+  background-color: #f4f4fd; /* або як у макеті */
+  padding: 120px 0;
+  text-align: center;
+}
+
 /* Кнопка в секції героя */
 .hero-button {
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
   background-color: #4D5AE5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -174,4 +293,43 @@ a {
 
 .footer-span {
   color: #f4f4fd;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px; /* якщо потрібен внутрішній відступ */
+}
+
+.team-list{
+  display: flex;
+}
+.site-header{
+  display: flex;
+  padding: 25px 0 25px 156px;
+}
+
+
+.hero-section {
+  display: flex;
+  justify-content: center;   /* Горизонтальне центрування */
+  align-items: center;       /* Вертикальне центрування */
+  text-align: center;        /* Центрує текст у h1 */
+  height: 600px;             /* Висота банера (можеш змінити) */
+}
+
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px; /* Відстань між h1 і кнопкою */
+  max-width: 100%;
+  padding: 0 15px; /* Щоб уникнути прилипання до країв на малих екранах */
+}
+
+.hero-title {
+  max-width: 496px; /* Обмеження ширини заголовка */
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0;
 }
