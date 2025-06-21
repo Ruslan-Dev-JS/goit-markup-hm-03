@@ -197,9 +197,30 @@ a {
 /* Hero-секція */
 .hero-section {
   padding: 188px 0;
-  background-color: #2e2f42; /* якщо в макеті є фон */
-  text-align: center;
 }
+
+.hero-title {
+  max-width: 496px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 56px;
+  line-height: 1.07;
+  color: #fff;
+}
+
+.hero-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin: 48px auto 0; /* центрування по горизонталі */
+  border: none;
+  background-color: var(--iris, #4d5ae5); /* css змінна або дефолтне значення */
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+}
+
 
 /* Контейнер */
 .container {
