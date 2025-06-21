@@ -1,9 +1,4 @@
 /* Базові стилі для body та списків */
-*{
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -22,26 +17,6 @@ a {
   color: inherit;
 }
 
-.feature-title {
-  font-weight: 500;    
-  font-size: 20px;      
-  line-height: 1.2;        
-  letter-spacing: 0.02em;   
-  color: #2e2f42;           
-}
-
-/* Логотип */
-.logo-class {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  margin-right: 76px;
-
-}
 
 /* Стилі хедера */
 .site-header {
@@ -69,13 +44,11 @@ a {
 
 /* Логотип */
 .logo-class {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: rgb(77, 90, 229);
+  margin-right: 76px;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  color: #2e2f42;
 }
 
 /* Меню */
@@ -116,41 +89,30 @@ a {
 }
 
 
+.feature-title {
+  font-weight: 500;    
+  font-size: 20px;      
+  line-height: 1.2;        
+  letter-spacing: 0.02em;   
+  color: #2e2f42;           
+}
+
+/* Логотип */
+.logo-class {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
 .studio_logo {
   color: #2e2f42;
 }
 
 /* Навігаційні посилання */
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  gap: 40px; /* Відступ між логотипом і списком */
-}
-
-
-.nav-main-list {
-  display: flex;
-  align-items: center;
-}
-
-
-.nav-main-list ul {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.contact_address ul {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .nav-link {
   font-weight: 500;
   font-size: 16px;
@@ -166,14 +128,6 @@ a {
 }
 
 /* Address */
-
-
-.site-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  }
-
 .contact_address {
   font-style: normal;
 }
@@ -194,34 +148,35 @@ a {
     color: #404bbf;
 }
 
+.feature-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.feature-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+
+
+
+/* Секція героя */
+.hero-section {
+  background-color: #2e2f42;
+}
+
 /* Hero-секція */
 .hero-section {
   padding: 188px 0;
-}
-
-.hero-title-text {
-  max-width: 496px;
-  margin: 0 auto;
+  background-color: #2e2f42; /* якщо в макеті є фон */
   text-align: center;
-  font-size: 56px;
-  line-height: 1.07;
-  color: #fff;
 }
-
-.hero-button-order{
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  margin: 48px auto 0;
-  border: none;
-  background-color:#4d5ae5;
-  border-radius: 4px;
-  cursor: pointer;
-  color: #fff;
-  font-size: 16px;
-}
-
-
 
 /* Контейнер */
 .container {
@@ -257,6 +212,26 @@ a {
   padding: 16px 32px;
 }
 
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Кнопка в секції героя */
+
+.hero-button:hover {
+    background-color: #404BBF;
+}
+
+.hero-button:focus{
+    background-color: #404BBF;
+}
+
+/* Команда */
 
 
 .features-section {
@@ -308,45 +283,11 @@ a {
   color: #434455;
 }
 
-.feature-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
 
-.feature-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+.team-section {
+  background-color: #F4F4FD;
+  padding: 120px 0;
 }
-
-.features-list {
-  display: flex;
-  gap: 8px; /* або інше значення, згідно макету */
-  padding:50px 156px;
-  list-style: none;
-}
-
-.feature-item {
-  flex: 1 1 0;
-  max-width: 264px; /* обмеження ширини блоку */
-}
-
-.feature-title {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.feature-text {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #434455;
-}
-
 
 /* Секція */
 .team-section {
@@ -407,96 +348,6 @@ a {
 }
 
 
-
-
-/* Секція героя */
-.hero-section {
-  background-color: #2e2f42;
-}
-
-.hero-title {
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  text-align: center;
-}
-
-
-.team-list {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap; /* дозволяє перенос карток на новий рядок */
-  justify-content: center;
-}
-
-.team-card {
-  background-color: #ffffff;
-  border-radius: 4px;
-  overflow: hidden;
-  width: 264px;
-  padding-bottom: 32px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.team-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.card-title {
-  margin-top: 32px;
-  margin-bottom: 8px;
-  font-size: 20px;
-  font-weight: 500;
-  color: #2e2f42;
-}
-
-.card-text {
-  margin: 0;
-  font-size: 16px;
-  color: #434455;
-}
-
-.team-section {
-  background-color: #f4f4fd; /* або як у макеті */
-  padding: 120px 0;
-  text-align: center;
-}
-
-/* Кнопка в секції героя */
-.hero-button {
-  padding: 16px 32px;
-  border-radius: 4px;
-  border: none;
-  background-color: #4D5AE5;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.hero-button:hover {
-    background-color: #404BBF;
-}
-
-.hero-button:focus{
-    background-color: #404BBF;
-}
-
-/* Команда */
-.team-section {
-  background-color: #F4F4FD;
-}
-
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -518,7 +369,12 @@ a {
   color: #2e2f42;
 }
 
-
+.card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
 
 .portfolio-cards {
   padding: 120px 0;
@@ -569,6 +425,8 @@ a {
 }
 
 
+
+
 /* Футер */
 .site-footer {
   background-color: #2e2f42;
@@ -582,43 +440,4 @@ a {
 
 .footer-span {
   color: #f4f4fd;
-}
-
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px; /* якщо потрібен внутрішній відступ */
-}
-
-.team-list{
-  display: flex;
-}
-.site-header{
-  display: flex;
-  padding: 25px 0 25px 156px;
-}
-
-
-.hero-section {
-  display: flex;
-  justify-content: center;   /* Горизонтальне центрування */
-  align-items: center;       /* Вертикальне центрування */
-  text-align: center;        /* Центрує текст у h1 */
-  height: 600px;             /* Висота банера (можеш змінити) */
-}
-
-.hero-section .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px; /* Відстань між h1 і кнопкою */
-  max-width: 100%;
-  padding: 0 15px; /* Щоб уникнути прилипання до країв на малих екранах */
-}
-
-.hero-title {
-  max-width: 496px; /* Обмеження ширини заголовка */
-  font-size: 36px;
-  line-height: 1.2;
-  margin: 0;
 }
