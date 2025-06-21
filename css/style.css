@@ -199,7 +199,7 @@ a {
   padding: 188px 0;
 }
 
-.hero-title {
+.hero-title-text {
   max-width: 496px;
   margin: 0 auto;
   text-align: center;
@@ -208,7 +208,7 @@ a {
   color: #fff;
 }
 
-.hero-button {
+.hero-button-order{
   display: block;
   min-width: 169px;
   height: 56px;
