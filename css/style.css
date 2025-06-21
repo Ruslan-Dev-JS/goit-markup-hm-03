@@ -212,14 +212,15 @@ a {
   display: block;
   min-width: 169px;
   height: 56px;
-  margin: 48px auto 0; /* центрування по горизонталі */
+  margin: 48px auto 0;
   border: none;
-  background-color: var(--iris, #4d5ae5); /* css змінна або дефолтне значення */
+  background-color: var(--iris, #4d5ae5);
   border-radius: 4px;
   cursor: pointer;
   color: #fff;
   font-size: 16px;
 }
+
 
 
 /* Контейнер */
