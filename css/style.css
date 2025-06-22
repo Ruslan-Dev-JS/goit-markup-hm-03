@@ -497,7 +497,7 @@ img {
   color: #ffffff; /* текст білий */
 }
 
-.footer-logo {
+.logo-class {
   display: inline-block;
   margin-bottom: 16px;
   font-size: 1.5rem; /* довільно */
