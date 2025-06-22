@@ -316,20 +316,7 @@ a {
 }
 
 /* Список */
-.team-list {
-  display: flex;
-  gap: 24px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 
-/* Пункт списку */
-.team-card {
-  flex-basis: calc((100% - 72px) / 4);
-  background-color: #ffffff;
-  text-align: center;
-}
 
 /* Заголовок в картці */
 .card-title {
@@ -341,11 +328,6 @@ a {
 }
 
 /* Параграф */
-.card-text {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #434455;
-}
 
 
 .section-title {
@@ -355,6 +337,64 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+}
+
+.team-section {
+  padding: 120px 0;
+}
+
+.team-title {
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.team-card {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-info {
+  padding: 32px 0;
+  width: 100%;
+}
+
+.card-title {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 18px; /* можна вказати свій розмір */
+}
+
+.card-text {
+  text-align: center;
+  font-size: 14px; /* можна вказати свій розмір */
+  color: #666; /* наприклад, сірий колір для тексту */
+}
+
+/* Якщо потрібен відступ у останнього li */
+.team-list li:last-child {
+  margin-right: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 .team-card {
@@ -440,4 +480,26 @@ a {
 
 .footer-span {
   color: #f4f4fd;
+}
+
+.site-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #2e2f42; /* приклад фону футера */
+  color: #ffffff; /* текст білий */
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit; /* або конкретний колір */
+}
+
+.footer-text {
+  max-width: 264px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
