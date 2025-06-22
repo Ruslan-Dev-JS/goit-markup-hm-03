@@ -345,6 +345,8 @@ a {
 
 .team-title {
   margin-bottom: 72px;
+  font-size: 2rem; /* або відповідний розмір */
+  text-align: center; /* якщо потрібно центрувати */
 }
 
 .team-list {
@@ -463,6 +465,13 @@ a {
   line-height: 1.5;
   color: #434455;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 
