@@ -238,6 +238,7 @@ a {
   padding: 120px 0;
 }
 
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -255,6 +256,7 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
 }
 
 .features-list {
@@ -501,11 +503,12 @@ img {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* довільно */
   font-weight: bold;
   text-decoration: none;
-  color: inherit; /* або конкретний колір */
+  color: inherit; /* або будь-який колір */
 }
+
 
 .footer-text {
   max-width: 264px;
