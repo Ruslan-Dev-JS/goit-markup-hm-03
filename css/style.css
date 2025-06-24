@@ -17,17 +17,14 @@ a {
   color: inherit;
 }
 
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+
 
 /* Стилі хедера */
 .site-header {
   border-bottom: 1px solid #e7e9fc;
-}
-
-/* Контейнер */
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .header-container {
@@ -48,8 +45,12 @@ a {
   font-weight: 700;
   font-size: 18px;
   text-decoration: none;
-  color: #2e2f42;
-}
+  color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 1.5rem; /* довільно */
+  font-weight: bold;
+  }
 
 /* Меню */
 .nav-list {
@@ -66,6 +67,10 @@ a {
   color: #2e2f42;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  display: block;
 }
 
 /* Контакти */
@@ -88,15 +93,6 @@ a {
   font-size: 16px;
 }
 
-
-.feature-title {
-  font-weight: 500;    
-  font-size: 20px;      
-  line-height: 1.2;        
-  letter-spacing: 0.02em;   
-  color: #2e2f42;           
-}
-
 /* Логотип */
 .logo-class {
   font-family: "Raleway", sans-serif;
@@ -112,14 +108,6 @@ a {
   color: #2e2f42;
 }
 
-/* Навігаційні посилання */
-.nav-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
 
 .nav-link:hover,
 .nav-link:focus,
@@ -148,25 +136,6 @@ a {
     color: #404bbf;
 }
 
-.feature-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.feature-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
-
-
-
-/* Секція героя */
 .hero-section {
   background-color: #2e2f42;
 }
@@ -178,22 +147,6 @@ a {
   text-align: center;
 }
 
-/* Контейнер */
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* Заголовок */
-.hero-title {
-  max-width: 496px;
-  margin: 0 auto 48px;
-  color: #ffffff;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.07;
-}
 
 /* Кнопка */
 .hero-button {
@@ -219,6 +172,8 @@ a {
   letter-spacing: 0.02em;
   color: #ffffff;
   text-align: center;
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 /* Кнопка в секції героя */
@@ -292,14 +247,6 @@ a {
 }
 
 
-
-/* Контейнер */
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 /* Прихований заголовок */
 .visually-hidden {
   position: absolute;
@@ -369,19 +316,6 @@ a {
   width: 100%;
 }
 
-.card-title {
-  text-align: center;
-  margin-bottom: 8px;
-  font-size: 18px; /* можна вказати свій розмір */
-}
-
-.card-text {
-  text-align: center;
-  font-size: 14px; /* можна вказати свій розмір */
-  color: #666; /* наприклад, сірий колір для тексту */
-}
-
-/* Якщо потрібен відступ у останнього li */
 .team-list li:last-child {
   margin-right: 0;
 }
@@ -402,30 +336,10 @@ a {
   background-color: #FFFFFF;
 }
 
-.card-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.card-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
 .portfolio-cards {
   padding: 120px 0;
 }
 
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 
 .section-title {
   margin-bottom: 72px;
@@ -495,15 +409,6 @@ img {
   padding-bottom: 100px;
   background-color: #2e2f42; /* приклад фону футера */
   color: #ffffff; /* текст білий */
-}
-
-.logo-class {
-  display: inline-block;
-  margin-bottom: 16px;
-  font-size: 1.5rem; /* довільно */
-  font-weight: bold;
-  text-decoration: none;
-  color: inherit; /* або будь-який колір */
 }
 
 
